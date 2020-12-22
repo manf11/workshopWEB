@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+
+        p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+p.normal {
+  border: 2px solid red;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+}
+
+.usig {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 25px solid green;
+  padding: 25px;
+  margin: 25px;
+}
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+.p1.ex1 {
+  direction: rtl;
+}
+
+        </style>
+</head>
+<body class="container">
+    <h1 style="background-color:tomato;">tomato</h1>
+    <h1 style="background-color: orange;">orange</h1>
+    <h1 style="background-color: dodgerblue;">dodgerblue</h1>
+    <h1 style="background-color: mediumseagreen;">mediumseagreen</h1>
+    <h1 style="border: 2px solid tomato;">helloworld</h1>
+    <h1 style="border:2px solid violet;">violet</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0);">one</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.2);">two</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.4);">tri</h1>
+    <h1 style="background-color: rgba(255, 99, 71, 0.8);">four</h1>
+    <h1 style="font-size: 10vw;">responsive text</h1>
+    <p style="font-size: 5vw;">resizethe browser</p>
+    <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+    <h2>The border-style Property</h2>
+        <p>This property specifies what kind of border to display:</p>
+
+        <p class="dotted">A dotted border.</p>
+        <p class="dashed">A dashed border.</p>
+        <p class="solid">A solid border.</p>
+        <p class="double">A double border.</p>
+        <p class="groove">A groove border.</p>
+        <p class="ridge">A ridge border.</p>
+        <p class="inset">An inset border.</p>
+        <p class="outset">An outset border.</p>
+        <p class="none">No border.</p>
+        <p class="hidden">A hidden border.</p>
+        <p class="mix">A mixed border.</p>
+
+         <h3>The border-radius Property</h3>
+            <p>This property is used to add rounded borders to an element:</p>
+
+            <p class="normal">Normal border</p>
+            <p class="round1">Round border</p>
+            <p class="round2">Rounder border</p>
+            <p class="round3">Roundest border</p>
+
+            <p><b>Note:</b> The "border-radius" property is not supported in IE8 and earlier versions.</p>
+           <h2>Using individual padding properties</h2>
+                <div class="usig">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.
+            </div>
+        <h2>Demonstrating the Box Model</h2>
+
+            <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+            <div>This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. </div>
+            <!-- //text-transformation// -->
+            <p class="uppercase">This is some text.</p>
+            <p class="lowercase">This is some text.</p>
+            <p class="capitalize">This is some text.</p>
+            <div class="p1"><p>This is the default text direction.</p></div>
+<p class="ex1"><bdo dir="rtl">This is right-to-left text direction. bdo=BiDirectional Override </bdo></p>
+
+    <!-- font awesome -->
+        <p>Some Font Awesome icons:</p>
+        <i class="fa fa-cloud"></i>
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-car"></i>
+        <i class="fa fa-file"></i>
+        <i class="fa fa-bars"></i>
+
+        <p>Styled Font Awesome icons (size and color):</p>
+            <i class="fa fa-cloud" style="font-size:24px;"></i>
+            <i class="fa fa-cloud" style="font-size:36px;"></i>
+            <i class="fa fa-cloud" style="font-size:48px;color:red;"></i>
+            <i class="fa fa-cloud" style="font-size:60px;color:lightblue;"></i>
+ <!-- font-bootstrap -->
+<p>Some Bootstrap icons:</p>
+        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-remove"></i>
+        <i class="glyphicon glyphicon-user"></i>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <i class="glyphicon glyphicon-thumbs-up"></i>
+    <br>
+<br>
+
+<p>Styled Bootstrap icons (size and color):</p>
+    <i class="glyphicon glyphicon-cloud" style="font-size:24px;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:36px;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:48px;color:red;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:60px;color:lightblue;"></i>
+
+</body>
+</html>
